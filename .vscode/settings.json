@@ -1,0 +1,13 @@
+{
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        },
+        "editor.formatOnSave": true,
+        "editor.formatOnSaveMode": "modifications",
+        "editor.semanticHighlighting.enabled": true,
+    },
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true
+}
