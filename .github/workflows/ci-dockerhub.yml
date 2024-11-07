@@ -2,7 +2,9 @@ name: Publish Docker image
 
 on:
   push:
-    branches: []
+    branches: [
+      dockerhub/*
+    ]
 
 env:
   REGISTRY_IMAGE: nishidedev/dgl-attrs-hyperfusion
