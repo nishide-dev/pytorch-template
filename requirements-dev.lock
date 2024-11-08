@@ -259,9 +259,12 @@ pure-eval==0.2.3
 pycparser==2.22
     # via cffi
 pydantic==2.9.2
+    # via pydantic-settings
     # via pytorch-template
 pydantic-core==2.23.4
     # via pydantic
+pydantic-settings==2.6.1
+    # via pytorch-template
 pygments==2.18.0
     # via ipython
     # via jupyter-console
@@ -273,6 +276,7 @@ python-dateutil==2.9.0.post0
     # via arrow
     # via jupyter-client
 python-dotenv==1.0.1
+    # via pydantic-settings
     # via pytorch-template
 python-json-logger==2.0.7
     # via jupyter-events

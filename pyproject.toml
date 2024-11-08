@@ -8,6 +8,7 @@ dependencies = [
     "torchvision==0.18.0+cu121",
     "pydantic>=2.9.2",
     "python-dotenv>=1.0.1",
+    "pydantic-settings>=2.6.1",
 ]
 readme = "README.md"
 requires-python = ">= 3.10"
@@ -36,4 +37,4 @@ type = "index"
 allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/pytorch_template"]
+packages = ["src/"]
