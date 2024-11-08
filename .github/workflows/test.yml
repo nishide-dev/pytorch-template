@@ -37,5 +37,6 @@ jobs:
       - name: Run Pytest if directory exists
         run: |
           if [ -d "./tests/" ]; then
+            cp .env.example .env
             rye run pytest -s
           fi
