@@ -11,13 +11,13 @@ class Arguments(BaseModel):
     """Arguments class for the main script."""
 
     # name
-    name: str = Field(default="pytorch-template", title="name", description="Name")
+    name: str = Field(default="pytorch-template", title="n", description="name")
 
     # training
     device: str = Field(
         default="cuda" if torch.cuda.is_available() else "cpu",
-        title="device",
-        description="Device",
+        title="d",
+        description="device",
     )
 
     @classmethod
@@ -27,7 +27,7 @@ class Arguments(BaseModel):
         properties: dict = cls.model_json_schema()["properties"]
         for v in properties.values():
             arg = {}
-            arg["name_or_flags"] = [f"-{v['title'][0:2]}", f"--{v['title']}"]
+            arg["name_or_flags"] = [f"-{v['title']}", f"--{v['description']}"]
             if v["default"]:
                 arg["default"] = v["default"]
             else:
