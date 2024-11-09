@@ -1,6 +1,6 @@
 import torch
 
-from config.arguments import Arguments
+from config import Arguments
 
 
 def test_default_values() -> None:

@@ -2,7 +2,7 @@
 import pytest
 
 # internal imports
-from config.settings import Settings, get_settings
+from config import Settings, get_settings
 
 
 @pytest.fixture()

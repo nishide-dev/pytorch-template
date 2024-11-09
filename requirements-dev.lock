@@ -40,12 +40,15 @@ certifi==2022.12.7
     # via httpcore
     # via httpx
     # via requests
+    # via sentry-sdk
 cffi==1.17.1
     # via argon2-cffi-bindings
 cfgv==3.4.0
     # via pre-commit
 charset-normalizer==2.1.1
     # via requests
+click==8.1.7
+    # via wandb
 comm==0.2.2
     # via ipykernel
     # via ipywidgets
@@ -57,6 +60,8 @@ defusedxml==0.7.1
     # via nbconvert
 distlib==0.3.9
     # via virtualenv
+docker-pycreds==0.4.0
+    # via wandb
 exceptiongroup==1.2.2
     # via anyio
     # via ipython
@@ -73,6 +78,10 @@ fqdn==1.5.1
     # via jsonschema
 fsspec==2024.2.0
     # via torch
+gitdb==4.0.11
+    # via gitpython
+gitpython==3.1.43
+    # via wandb
 h11==0.14.0
     # via httpcore
 httpcore==1.0.6
@@ -240,6 +249,7 @@ pillow==10.2.0
 platformdirs==4.3.6
     # via jupyter-core
     # via virtualenv
+    # via wandb
 pluggy==1.5.0
     # via pytest
 pre-commit==4.0.1
@@ -248,9 +258,12 @@ prometheus-client==0.21.0
 prompt-toolkit==3.0.48
     # via ipython
     # via jupyter-console
+protobuf==5.28.3
+    # via wandb
 psutil==6.1.0
     # via ipykernel
     # via nvitop
+    # via wandb
 ptyprocess==0.7.0
     # via pexpect
     # via terminado
@@ -283,6 +296,7 @@ python-json-logger==2.0.7
 pyyaml==6.0.2
     # via jupyter-events
     # via pre-commit
+    # via wandb
 pyzmq==26.2.0
     # via ipykernel
     # via jupyter-client
@@ -294,6 +308,7 @@ referencing==0.35.1
     # via jupyter-events
 requests==2.28.1
     # via jupyterlab-server
+    # via wandb
 rfc3339-validator==0.1.4
     # via jsonschema
     # via jupyter-events
@@ -306,10 +321,19 @@ rpds-py==0.21.0
 ruff==0.7.2
 send2trash==1.8.3
     # via jupyter-server
+sentry-sdk==2.18.0
+    # via wandb
+setproctitle==1.3.3
+    # via wandb
+setuptools==70.0.0
+    # via wandb
 six==1.16.0
     # via asttokens
+    # via docker-pycreds
     # via python-dateutil
     # via rfc3339-validator
+smmap==5.0.1
+    # via gitdb
 sniffio==1.3.1
     # via anyio
     # via httpx
@@ -370,12 +394,16 @@ typing-extensions==4.9.0
     # via pydantic
     # via pydantic-core
     # via torch
+    # via wandb
 uri-template==1.3.0
     # via jsonschema
 urllib3==1.26.13
     # via requests
+    # via sentry-sdk
 virtualenv==20.27.1
     # via pre-commit
+wandb==0.18.6
+    # via pytorch-template
 wcwidth==0.2.13
     # via prompt-toolkit
 webcolors==24.8.0
