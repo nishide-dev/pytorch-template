@@ -35,6 +35,8 @@ jobs:
           rye sync
 
       - name: Run Pytest if directory exists
+        env:
+          WANDB_API_KEY: ${{ secrets.WANDB_API_KEY }}
         run: |
           if [ -d "./tests/" ]; then
             cp .env.example .env
